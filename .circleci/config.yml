@@ -3,7 +3,7 @@ version: 2.1
 jobs:
   deploy:
     docker:
-      - image: cimg/node:20.20.0 # Updated to the latest Node.js version
+      - image: cimg/node:14.15.5 # Reverted to the previous Node.js version
     steps:
       - checkout
       - run:
