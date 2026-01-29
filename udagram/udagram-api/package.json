@@ -7,6 +7,7 @@
   },
   "main": "server.ts",
   "scripts": {
+    "postinstall": "tsc && cp -rf src/config www/config",
     "start": "node ./server.js",
     "start:dev": "node ./www/server.js",
     "tsc": "npx tsc",
@@ -34,7 +35,8 @@
     "pg": "^8.7.1",
     "reflect-metadata": "^0.1.13",
     "sequelize": "^6.26.0",
-    "sequelize-typescript": "^2.1.5"
+    "sequelize-typescript": "^2.1.5",
+    "typescript": "^4.2.3"
   },
   "devDependencies": {
     "@types/bluebird": "^3.5.26",
@@ -50,7 +52,6 @@
     "eslint": "^6.8.0",
     "eslint-config-google": "^0.14.0",
     "mocha": "^6.1.4",
-    "ts-node-dev": "^1.0.0-pre.32",
-    "typescript": "^4.2.3"
+    "ts-node-dev": "^1.0.0-pre.32"
   }
 }
