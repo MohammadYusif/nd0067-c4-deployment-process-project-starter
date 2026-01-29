@@ -8,12 +8,12 @@ orbs:
 jobs:
   build:
     docker:
-      # the base image can run most needed actions with orbs
-      - image: "cimg/node:20.0"
+      # Use Node 16 for compatibility with Angular 8 and older webpack (OpenSSL)
+      - image: "cimg/node:16.20"
     steps:
       # install node and checkout code
       - node/install:
-          node-version: '20.0'
+          node-version: '16.20'
       - checkout
       # Use root level package.json to install dependencies in the frontend app
       - run:
