@@ -1,19 +1,20 @@
 # This file is used for convenience of local development.
 # DO NOT STORE YOUR CREDENTIALS INTO GIT
+# Set these values in your environment or CI/CD system
 
 # Database Configuration
-export POSTGRES_USERNAME=postgres
-export POSTGRES_PASSWORD=Udagram2024Pass
-export POSTGRES_HOST=udagram-db.ceqeklx3qssj.us-east-1.rds.amazonaws.com
-export POSTGRES_DB=postgres
+export POSTGRES_USERNAME=$POSTGRES_USERNAME
+export POSTGRES_PASSWORD=$POSTGRES_PASSWORD
+export POSTGRES_HOST=$POSTGRES_HOST
+export POSTGRES_DB=$POSTGRES_DB
 
 # AWS Configuration
-export AWS_BUCKET=arn:aws:s3:::udagram-frontend-368047729698
-export AWS_REGION=us-east-1
-export AWS_PROFILE=default
+export AWS_BUCKET=$AWS_BUCKET
+export AWS_REGION=$AWS_REGION
+export AWS_PROFILE=$AWS_PROFILE
 
 # JWT Secret
-export JWT_SECRET=mysecretjwtstring2024
+export JWT_SECRET=$JWT_SECRET
 
 # Frontend URL
-export URL=http://udagram-frontend-368047729698.s3-website-us-east-1.amazonaws.com
+export URL=$URL
